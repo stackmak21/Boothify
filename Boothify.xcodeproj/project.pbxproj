@@ -7,18 +7,100 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0955943E77A622FC0C338A0D /* Pods_Boothify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D694F89487A7359A0F615BFE /* Pods_Boothify.framework */; };
 		F9CE15DE2BFD2F3100FB137E /* BoothifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE15DD2BFD2F3100FB137E /* BoothifyApp.swift */; };
 		F9CE15E02BFD2F3100FB137E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE15DF2BFD2F3100FB137E /* ContentView.swift */; };
 		F9CE15E22BFD2F3300FB137E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9CE15E12BFD2F3300FB137E /* Assets.xcassets */; };
 		F9CE15E52BFD2F3300FB137E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9CE15E42BFD2F3300FB137E /* Preview Assets.xcassets */; };
+		F9CE15F72BFD32C100FB137E /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE15EF2BFD32C100FB137E /* Coordinator.swift */; };
+		F9CE15F82BFD32C100FB137E /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE15F02BFD32C100FB137E /* Routes.swift */; };
+		F9CE15F92BFD32C100FB137E /* SystemRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE15F12BFD32C100FB137E /* SystemRoutes.swift */; };
+		F9CE15FA2BFD32C100FB137E /* NavigationRouteProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE15F22BFD32C100FB137E /* NavigationRouteProtocol.swift */; };
+		F9CE15FB2BFD32C100FB137E /* NavigationDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE15F32BFD32C100FB137E /* NavigationDirection.swift */; };
+		F9CE15FC2BFD32C100FB137E /* NavigationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE15F42BFD32C100FB137E /* NavigationRouter.swift */; };
+		F9CE15FD2BFD32C100FB137E /* NavigationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE15F52BFD32C100FB137E /* NavigationViewModel.swift */; };
+		F9CE15FE2BFD32C100FB137E /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE15F62BFD32C100FB137E /* Navigator.swift */; };
+		F9CE16202BFE651C00FB137E /* faktum_extra_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F9CE160F2BFE651C00FB137E /* faktum_extra_bold.ttf */; };
+		F9CE16212BFE651C00FB137E /* btv.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F9CE16102BFE651C00FB137E /* btv.ttf */; };
+		F9CE16222BFE651C00FB137E /* faktum_regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F9CE16112BFE651C00FB137E /* faktum_regular.ttf */; };
+		F9CE16232BFE651C00FB137E /* faktum_medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F9CE16122BFE651C00FB137E /* faktum_medium.ttf */; };
+		F9CE16242BFE651C00FB137E /* faktum_extra_bold_italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F9CE16132BFE651C00FB137E /* faktum_extra_bold_italic.ttf */; };
+		F9CE16252BFE651C00FB137E /* faktum_light_italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F9CE16142BFE651C00FB137E /* faktum_light_italic.ttf */; };
+		F9CE16262BFE651C00FB137E /* faktum_semi_bold_italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F9CE16152BFE651C00FB137E /* faktum_semi_bold_italic.ttf */; };
+		F9CE16272BFE651C00FB137E /* faktum_bold_italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F9CE16162BFE651C00FB137E /* faktum_bold_italic.ttf */; };
+		F9CE16282BFE651C00FB137E /* faktum_extra_light_italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F9CE16172BFE651C00FB137E /* faktum_extra_light_italic.ttf */; };
+		F9CE16292BFE651C00FB137E /* faktum_light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F9CE16182BFE651C00FB137E /* faktum_light.ttf */; };
+		F9CE162A2BFE651C00FB137E /* faktum_semi_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F9CE16192BFE651C00FB137E /* faktum_semi_bold.ttf */; };
+		F9CE162B2BFE651C00FB137E /* faktum_extra_light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F9CE161A2BFE651C00FB137E /* faktum_extra_light.ttf */; };
+		F9CE162C2BFE651C00FB137E /* faktum_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F9CE161B2BFE651C00FB137E /* faktum_bold.ttf */; };
+		F9CE162D2BFE651C00FB137E /* faktum_regular_italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F9CE161C2BFE651C00FB137E /* faktum_regular_italic.ttf */; };
+		F9CE162E2BFE651C00FB137E /* faktum_thin_italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F9CE161D2BFE651C00FB137E /* faktum_thin_italic.ttf */; };
+		F9CE162F2BFE651C00FB137E /* faktum_thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F9CE161E2BFE651C00FB137E /* faktum_thin.ttf */; };
+		F9CE16302BFE651C00FB137E /* faktum_medium_italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F9CE161F2BFE651C00FB137E /* faktum_medium_italic.ttf */; };
+		F9CE16352BFE654F00FB137E /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE16322BFE654F00FB137E /* Strings.swift */; };
+		F9CE16362BFE654F00FB137E /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE16332BFE654F00FB137E /* Assets.swift */; };
+		F9CE16372BFE654F00FB137E /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE16342BFE654F00FB137E /* Fonts.swift */; };
+		F9CE163C2BFE673900FB137E /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE163B2BFE673900FB137E /* BaseViewModel.swift */; };
+		F9CE163E2BFE6F7E00FB137E /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE163D2BFE6F7E00FB137E /* SplashScreen.swift */; };
+		F9CE16412BFE709900FB137E /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE16402BFE709900FB137E /* Typography.swift */; };
+		F9CE16432BFE70C800FB137E /* NavigationControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE16422BFE70C800FB137E /* NavigationControllerExtensions.swift */; };
+		F9CE16452BFE70D200FB137E /* FontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE16442BFE70D200FB137E /* FontExtensions.swift */; };
+		F9CE16472BFE70EE00FB137E /* FocusNative.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE16462BFE70EE00FB137E /* FocusNative.swift */; };
+		F9CE164A2BFE723E00FB137E /* SplashScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE16492BFE723E00FB137E /* SplashScreenViewModel.swift */; };
+		F9CE164D2BFE72F600FB137E /* HomeScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE164C2BFE72F600FB137E /* HomeScreenViewModel.swift */; };
+		F9CE164F2BFE730D00FB137E /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE164E2BFE730D00FB137E /* HomeScreen.swift */; };
+		F9CE16512BFE736700FB137E /* HomeScreenRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE16502BFE736700FB137E /* HomeScreenRoute.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		206D5590ACDB0E397181AC72 /* Pods-Boothify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Boothify.debug.xcconfig"; path = "Target Support Files/Pods-Boothify/Pods-Boothify.debug.xcconfig"; sourceTree = "<group>"; };
+		861DDC523D8813FF0328EB7B /* Pods-Boothify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Boothify.release.xcconfig"; path = "Target Support Files/Pods-Boothify/Pods-Boothify.release.xcconfig"; sourceTree = "<group>"; };
+		D694F89487A7359A0F615BFE /* Pods_Boothify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Boothify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9CE15DA2BFD2F3100FB137E /* Boothify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Boothify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9CE15DD2BFD2F3100FB137E /* BoothifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoothifyApp.swift; sourceTree = "<group>"; };
 		F9CE15DF2BFD2F3100FB137E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F9CE15E12BFD2F3300FB137E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9CE15E42BFD2F3300FB137E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F9CE15EF2BFD32C100FB137E /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		F9CE15F02BFD32C100FB137E /* Routes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
+		F9CE15F12BFD32C100FB137E /* SystemRoutes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemRoutes.swift; sourceTree = "<group>"; };
+		F9CE15F22BFD32C100FB137E /* NavigationRouteProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationRouteProtocol.swift; sourceTree = "<group>"; };
+		F9CE15F32BFD32C100FB137E /* NavigationDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationDirection.swift; sourceTree = "<group>"; };
+		F9CE15F42BFD32C100FB137E /* NavigationRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationRouter.swift; sourceTree = "<group>"; };
+		F9CE15F52BFD32C100FB137E /* NavigationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewModel.swift; sourceTree = "<group>"; };
+		F9CE15F62BFD32C100FB137E /* Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		F9CE15FF2BFD376600FB137E /* FlowStacks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FlowStacks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9CE160D2BFD46E100FB137E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F9CE160F2BFE651C00FB137E /* faktum_extra_bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = faktum_extra_bold.ttf; sourceTree = "<group>"; };
+		F9CE16102BFE651C00FB137E /* btv.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = btv.ttf; sourceTree = "<group>"; };
+		F9CE16112BFE651C00FB137E /* faktum_regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = faktum_regular.ttf; sourceTree = "<group>"; };
+		F9CE16122BFE651C00FB137E /* faktum_medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = faktum_medium.ttf; sourceTree = "<group>"; };
+		F9CE16132BFE651C00FB137E /* faktum_extra_bold_italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = faktum_extra_bold_italic.ttf; sourceTree = "<group>"; };
+		F9CE16142BFE651C00FB137E /* faktum_light_italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = faktum_light_italic.ttf; sourceTree = "<group>"; };
+		F9CE16152BFE651C00FB137E /* faktum_semi_bold_italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = faktum_semi_bold_italic.ttf; sourceTree = "<group>"; };
+		F9CE16162BFE651C00FB137E /* faktum_bold_italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = faktum_bold_italic.ttf; sourceTree = "<group>"; };
+		F9CE16172BFE651C00FB137E /* faktum_extra_light_italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = faktum_extra_light_italic.ttf; sourceTree = "<group>"; };
+		F9CE16182BFE651C00FB137E /* faktum_light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = faktum_light.ttf; sourceTree = "<group>"; };
+		F9CE16192BFE651C00FB137E /* faktum_semi_bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = faktum_semi_bold.ttf; sourceTree = "<group>"; };
+		F9CE161A2BFE651C00FB137E /* faktum_extra_light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = faktum_extra_light.ttf; sourceTree = "<group>"; };
+		F9CE161B2BFE651C00FB137E /* faktum_bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = faktum_bold.ttf; sourceTree = "<group>"; };
+		F9CE161C2BFE651C00FB137E /* faktum_regular_italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = faktum_regular_italic.ttf; sourceTree = "<group>"; };
+		F9CE161D2BFE651C00FB137E /* faktum_thin_italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = faktum_thin_italic.ttf; sourceTree = "<group>"; };
+		F9CE161E2BFE651C00FB137E /* faktum_thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = faktum_thin.ttf; sourceTree = "<group>"; };
+		F9CE161F2BFE651C00FB137E /* faktum_medium_italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = faktum_medium_italic.ttf; sourceTree = "<group>"; };
+		F9CE16322BFE654F00FB137E /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		F9CE16332BFE654F00FB137E /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		F9CE16342BFE654F00FB137E /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		F9CE163B2BFE673900FB137E /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		F9CE163D2BFE6F7E00FB137E /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		F9CE16402BFE709900FB137E /* Typography.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
+		F9CE16422BFE70C800FB137E /* NavigationControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationControllerExtensions.swift; sourceTree = "<group>"; };
+		F9CE16442BFE70D200FB137E /* FontExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontExtensions.swift; sourceTree = "<group>"; };
+		F9CE16462BFE70EE00FB137E /* FocusNative.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusNative.swift; sourceTree = "<group>"; };
+		F9CE16492BFE723E00FB137E /* SplashScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewModel.swift; sourceTree = "<group>"; };
+		F9CE164C2BFE72F600FB137E /* HomeScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewModel.swift; sourceTree = "<group>"; };
+		F9CE164E2BFE730D00FB137E /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		F9CE16502BFE736700FB137E /* HomeScreenRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenRoute.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +108,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0955943E77A622FC0C338A0D /* Pods_Boothify.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E940AD70746AE844E139DA4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				206D5590ACDB0E397181AC72 /* Pods-Boothify.debug.xcconfig */,
+				861DDC523D8813FF0328EB7B /* Pods-Boothify.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F9CE15D12BFD2F3100FB137E = {
 			isa = PBXGroup;
 			children = (
+				F9CE16312BFE654F00FB137E /* Generated */,
 				F9CE15DC2BFD2F3100FB137E /* Boothify */,
 				F9CE15DB2BFD2F3100FB137E /* Products */,
+				5E940AD70746AE844E139DA4 /* Pods */,
+				FCAF18B3200D99CB189C36F3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,8 +146,14 @@
 		F9CE15DC2BFD2F3100FB137E /* Boothify */ = {
 			isa = PBXGroup;
 			children = (
+				F9CE163F2BFE709900FB137E /* Theme */,
+				F9CE15EE2BFD32AB00FB137E /* Navigation */,
+				F9CE160E2BFE651C00FB137E /* Fonts */,
+				F9CE163A2BFE66F400FB137E /* Extensions */,
+				F9CE16382BFE66C900FB137E /* Screens */,
+				F9CE16392BFE66D700FB137E /* ViewModels */,
+				F9CE160D2BFD46E100FB137E /* Info.plist */,
 				F9CE15DD2BFD2F3100FB137E /* BoothifyApp.swift */,
-				F9CE15DF2BFD2F3100FB137E /* ContentView.swift */,
 				F9CE15E12BFD2F3300FB137E /* Assets.xcassets */,
 				F9CE15E32BFD2F3300FB137E /* Preview Content */,
 			);
@@ -67,6 +168,119 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		F9CE15EE2BFD32AB00FB137E /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				F9CE15EF2BFD32C100FB137E /* Coordinator.swift */,
+				F9CE15F32BFD32C100FB137E /* NavigationDirection.swift */,
+				F9CE15F22BFD32C100FB137E /* NavigationRouteProtocol.swift */,
+				F9CE15F42BFD32C100FB137E /* NavigationRouter.swift */,
+				F9CE15F52BFD32C100FB137E /* NavigationViewModel.swift */,
+				F9CE15F62BFD32C100FB137E /* Navigator.swift */,
+				F9CE15F02BFD32C100FB137E /* Routes.swift */,
+				F9CE15F12BFD32C100FB137E /* SystemRoutes.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		F9CE160E2BFE651C00FB137E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F9CE160F2BFE651C00FB137E /* faktum_extra_bold.ttf */,
+				F9CE16102BFE651C00FB137E /* btv.ttf */,
+				F9CE16112BFE651C00FB137E /* faktum_regular.ttf */,
+				F9CE16122BFE651C00FB137E /* faktum_medium.ttf */,
+				F9CE16132BFE651C00FB137E /* faktum_extra_bold_italic.ttf */,
+				F9CE16142BFE651C00FB137E /* faktum_light_italic.ttf */,
+				F9CE16152BFE651C00FB137E /* faktum_semi_bold_italic.ttf */,
+				F9CE16162BFE651C00FB137E /* faktum_bold_italic.ttf */,
+				F9CE16172BFE651C00FB137E /* faktum_extra_light_italic.ttf */,
+				F9CE16182BFE651C00FB137E /* faktum_light.ttf */,
+				F9CE16192BFE651C00FB137E /* faktum_semi_bold.ttf */,
+				F9CE161A2BFE651C00FB137E /* faktum_extra_light.ttf */,
+				F9CE161B2BFE651C00FB137E /* faktum_bold.ttf */,
+				F9CE161C2BFE651C00FB137E /* faktum_regular_italic.ttf */,
+				F9CE161D2BFE651C00FB137E /* faktum_thin_italic.ttf */,
+				F9CE161E2BFE651C00FB137E /* faktum_thin.ttf */,
+				F9CE161F2BFE651C00FB137E /* faktum_medium_italic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F9CE16312BFE654F00FB137E /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				F9CE16322BFE654F00FB137E /* Strings.swift */,
+				F9CE16332BFE654F00FB137E /* Assets.swift */,
+				F9CE16342BFE654F00FB137E /* Fonts.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		F9CE16382BFE66C900FB137E /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				F9CE164B2BFE72E300FB137E /* HomeScreen */,
+				F9CE16482BFE720E00FB137E /* SplashScreen */,
+				F9CE15DF2BFD2F3100FB137E /* ContentView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		F9CE16392BFE66D700FB137E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F9CE163B2BFE673900FB137E /* BaseViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F9CE163A2BFE66F400FB137E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F9CE16422BFE70C800FB137E /* NavigationControllerExtensions.swift */,
+				F9CE16442BFE70D200FB137E /* FontExtensions.swift */,
+				F9CE16462BFE70EE00FB137E /* FocusNative.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F9CE163F2BFE709900FB137E /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				F9CE16402BFE709900FB137E /* Typography.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		F9CE16482BFE720E00FB137E /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				F9CE163D2BFE6F7E00FB137E /* SplashScreen.swift */,
+				F9CE16492BFE723E00FB137E /* SplashScreenViewModel.swift */,
+			);
+			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		F9CE164B2BFE72E300FB137E /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				F9CE164C2BFE72F600FB137E /* HomeScreenViewModel.swift */,
+				F9CE164E2BFE730D00FB137E /* HomeScreen.swift */,
+				F9CE16502BFE736700FB137E /* HomeScreenRoute.swift */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		FCAF18B3200D99CB189C36F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9CE15FF2BFD376600FB137E /* FlowStacks.framework */,
+				D694F89487A7359A0F615BFE /* Pods_Boothify.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +288,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F9CE15E82BFD2F3300FB137E /* Build configuration list for PBXNativeTarget "Boothify" */;
 			buildPhases = (
+				2AC2DEBF0CDD6E4A59379FA8 /* [CP] Check Pods Manifest.lock */,
+				F9CE16032BFD388700FB137E /* SwiftGen */,
 				F9CE15D62BFD2F3100FB137E /* Sources */,
 				F9CE15D72BFD2F3100FB137E /* Frameworks */,
 				F9CE15D82BFD2F3100FB137E /* Resources */,
+				7FBFDDBACD9F23F860936DE3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,20 +342,122 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9CE16202BFE651C00FB137E /* faktum_extra_bold.ttf in Resources */,
+				F9CE16262BFE651C00FB137E /* faktum_semi_bold_italic.ttf in Resources */,
+				F9CE16302BFE651C00FB137E /* faktum_medium_italic.ttf in Resources */,
+				F9CE16282BFE651C00FB137E /* faktum_extra_light_italic.ttf in Resources */,
+				F9CE162D2BFE651C00FB137E /* faktum_regular_italic.ttf in Resources */,
+				F9CE16222BFE651C00FB137E /* faktum_regular.ttf in Resources */,
+				F9CE162F2BFE651C00FB137E /* faktum_thin.ttf in Resources */,
 				F9CE15E52BFD2F3300FB137E /* Preview Assets.xcassets in Resources */,
+				F9CE162E2BFE651C00FB137E /* faktum_thin_italic.ttf in Resources */,
 				F9CE15E22BFD2F3300FB137E /* Assets.xcassets in Resources */,
+				F9CE16212BFE651C00FB137E /* btv.ttf in Resources */,
+				F9CE16292BFE651C00FB137E /* faktum_light.ttf in Resources */,
+				F9CE16232BFE651C00FB137E /* faktum_medium.ttf in Resources */,
+				F9CE16272BFE651C00FB137E /* faktum_bold_italic.ttf in Resources */,
+				F9CE162B2BFE651C00FB137E /* faktum_extra_light.ttf in Resources */,
+				F9CE162C2BFE651C00FB137E /* faktum_bold.ttf in Resources */,
+				F9CE16242BFE651C00FB137E /* faktum_extra_bold_italic.ttf in Resources */,
+				F9CE162A2BFE651C00FB137E /* faktum_semi_bold.ttf in Resources */,
+				F9CE16252BFE651C00FB137E /* faktum_light_italic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2AC2DEBF0CDD6E4A59379FA8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Boothify-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FBFDDBACD9F23F860936DE3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Boothify/Pods-Boothify-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Boothify/Pods-Boothify-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Boothify/Pods-Boothify-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9CE16032BFD388700FB137E /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(PROJECT_DIR)/Generated/Fonts.swift",
+				"$(PROJECT_DIR)/Generated/Assets.swift",
+				"$(PROJECT_DIR)/Generated/Strings.swift",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif [[ -f \"${PODS_ROOT}/SwiftGen/bin/swiftgen\" ]]; then\n  echo $PROJECT_DIR\n  mkdir -p Generated\n  touch Generated/Fonts.swift\n  touch Generated/Assets.swift\n  touch Generated/Strings.swift\n  \"${PODS_ROOT}/SwiftGen/bin/swiftgen\"\n  echo \"task completed succesfully\"\nelse\n  echo \"warning: SwiftGen is not installed. Run 'pod install --repo-update' to install it.\"\nfi \n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F9CE15D62BFD2F3100FB137E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9CE163E2BFE6F7E00FB137E /* SplashScreen.swift in Sources */,
+				F9CE16472BFE70EE00FB137E /* FocusNative.swift in Sources */,
+				F9CE15FD2BFD32C100FB137E /* NavigationViewModel.swift in Sources */,
+				F9CE16512BFE736700FB137E /* HomeScreenRoute.swift in Sources */,
+				F9CE16452BFE70D200FB137E /* FontExtensions.swift in Sources */,
+				F9CE164F2BFE730D00FB137E /* HomeScreen.swift in Sources */,
+				F9CE16412BFE709900FB137E /* Typography.swift in Sources */,
+				F9CE16352BFE654F00FB137E /* Strings.swift in Sources */,
+				F9CE16372BFE654F00FB137E /* Fonts.swift in Sources */,
+				F9CE163C2BFE673900FB137E /* BaseViewModel.swift in Sources */,
+				F9CE16362BFE654F00FB137E /* Assets.swift in Sources */,
+				F9CE164A2BFE723E00FB137E /* SplashScreenViewModel.swift in Sources */,
+				F9CE15FE2BFD32C100FB137E /* Navigator.swift in Sources */,
 				F9CE15E02BFD2F3100FB137E /* ContentView.swift in Sources */,
+				F9CE15F82BFD32C100FB137E /* Routes.swift in Sources */,
+				F9CE15FC2BFD32C100FB137E /* NavigationRouter.swift in Sources */,
+				F9CE15F92BFD32C100FB137E /* SystemRoutes.swift in Sources */,
 				F9CE15DE2BFD2F3100FB137E /* BoothifyApp.swift in Sources */,
+				F9CE164D2BFE72F600FB137E /* HomeScreenViewModel.swift in Sources */,
+				F9CE15F72BFD32C100FB137E /* Coordinator.swift in Sources */,
+				F9CE16432BFE70C800FB137E /* NavigationControllerExtensions.swift in Sources */,
+				F9CE15FB2BFD32C100FB137E /* NavigationDirection.swift in Sources */,
+				F9CE15FA2BFD32C100FB137E /* NavigationRouteProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,7 +501,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -197,7 +516,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -245,7 +564,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -254,7 +573,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -266,6 +585,7 @@
 		};
 		F9CE15E92BFD2F3300FB137E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 206D5590ACDB0E397181AC72 /* Pods-Boothify.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -275,11 +595,13 @@
 				DEVELOPMENT_TEAM = HTZN6N8NQA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Boothify/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -295,6 +617,7 @@
 		};
 		F9CE15EA2BFD2F3300FB137E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 861DDC523D8813FF0328EB7B /* Pods-Boothify.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -304,11 +627,13 @@
 				DEVELOPMENT_TEAM = HTZN6N8NQA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Boothify/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

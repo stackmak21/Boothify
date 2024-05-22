@@ -1,0 +1,28 @@
+PODS:
+  - FlowStacks (0.4.1)
+  - SwiftGen (6.6.2)
+
+DEPENDENCIES:
+  - FlowStacks (from `https://github.com/johnpatrickmorgan/FlowStacks.git`)
+  - SwiftGen (~> 6.0)
+
+SPEC REPOS:
+  trunk:
+    - SwiftGen
+
+EXTERNAL SOURCES:
+  FlowStacks:
+    :git: https://github.com/johnpatrickmorgan/FlowStacks.git
+
+CHECKOUT OPTIONS:
+  FlowStacks:
+    :commit: a2b974b81612e1e8ee3ecd757d936a2919527356
+    :git: https://github.com/johnpatrickmorgan/FlowStacks.git
+
+SPEC CHECKSUMS:
+  FlowStacks: fa1e5b2bbe7d7329d9c68fd1c93d04b5d2025369
+  SwiftGen: 1366a7f71aeef49954ca5a63ba4bef6b0f24138c
+
+PODFILE CHECKSUM: 74dd694afe4fccbb60067e4efd9b808cbabd9774
+
+COCOAPODS: 1.15.2

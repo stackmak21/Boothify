@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct BoothifyApp: App {
+    
+    init(){}
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HostView(coordinator: NavigationViewModel.shared.router.coordinator)
         }
     }
 }
