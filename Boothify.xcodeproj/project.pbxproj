@@ -63,6 +63,8 @@
 		F9CE166B2C08A83700FB137E /* OnBoardingScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE166A2C08A83700FB137E /* OnBoardingScreenViewModel.swift */; };
 		F9CE166D2C08AE0400FB137E /* PlaceholderModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE166C2C08AE0400FB137E /* PlaceholderModifier.swift */; };
 		F9CE166F2C08B37000FB137E /* ListingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE166E2C08B37000FB137E /* ListingItem.swift */; };
+		F9CE16712C08BDDF00FB137E /* TrailingLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE16702C08BDDF00FB137E /* TrailingLabelStyle.swift */; };
+		F9CE16732C08C24A00FB137E /* Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE16722C08C24A00FB137E /* Shadow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -127,6 +129,8 @@
 		F9CE166A2C08A83700FB137E /* OnBoardingScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingScreenViewModel.swift; sourceTree = "<group>"; };
 		F9CE166C2C08AE0400FB137E /* PlaceholderModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderModifier.swift; sourceTree = "<group>"; };
 		F9CE166E2C08B37000FB137E /* ListingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingItem.swift; sourceTree = "<group>"; };
+		F9CE16702C08BDDF00FB137E /* TrailingLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingLabelStyle.swift; sourceTree = "<group>"; };
+		F9CE16722C08C24A00FB137E /* Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shadow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -271,6 +275,8 @@
 				F9CE16462BFE70EE00FB137E /* FocusNative.swift */,
 				F9CE16672C08A23A00FB137E /* UserDefaultSettings.swift */,
 				F9CE166C2C08AE0400FB137E /* PlaceholderModifier.swift */,
+				F9CE16702C08BDDF00FB137E /* TrailingLabelStyle.swift */,
+				F9CE16722C08C24A00FB137E /* Shadow.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -516,6 +522,7 @@
 				F9CE16602C07965300FB137E /* OnBoardingContent.swift in Sources */,
 				F9CE164F2BFE730D00FB137E /* HomeScreen.swift in Sources */,
 				F9CE166F2C08B37000FB137E /* ListingItem.swift in Sources */,
+				F9CE16712C08BDDF00FB137E /* TrailingLabelStyle.swift in Sources */,
 				F9CE16412BFE709900FB137E /* Typography.swift in Sources */,
 				F9CE165A2C07916700FB137E /* ButtonStyleAttributes.swift in Sources */,
 				F9CE16352BFE654F00FB137E /* Strings.swift in Sources */,
@@ -524,6 +531,7 @@
 				F9CE16372BFE654F00FB137E /* Fonts.swift in Sources */,
 				F9CE163C2BFE673900FB137E /* BaseViewModel.swift in Sources */,
 				F9CE16362BFE654F00FB137E /* Assets.swift in Sources */,
+				F9CE16732C08C24A00FB137E /* Shadow.swift in Sources */,
 				F9CE164A2BFE723E00FB137E /* SplashScreenViewModel.swift in Sources */,
 				F9CE16542BFFE1A400FB137E /* DoubleHelixLoadingIndicator.swift in Sources */,
 				F9CE16682C08A23A00FB137E /* UserDefaultSettings.swift in Sources */,
