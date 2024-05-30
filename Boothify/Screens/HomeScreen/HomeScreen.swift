@@ -8,24 +8,36 @@
 import SwiftUI
 
 struct HomeScreen: View {
-    
-    @StateObject var vm: HomeScreenViewModel = HomeScreenViewModel()
+    @StateObject var onBoardingViewModel = OnBoardingScreenViewModel()
     
     var body: some View {
-        HomeScreenContent(vm: vm)
+        Group{
+            if onBoardingViewModel.isUserOnBoarding{
+                OnBoardingContent(vm: onBoardingViewModel)
+            }
+            else{
+                HomeScreenContent()
+            }
+        }
+        .navigationBarHidden(true)
+        .allowSwipeBack(allow: false)
     }
 }
 
 struct HomeScreenContent: View {
     
-    @ObservedObject var vm: HomeScreenViewModel
+    @StateObject var vm = HomeScreenViewModel()
     
     var body: some View {
-        VStack{
-            Text("Welcome")
+        GeometryReader{ container in
+            ZStack{
+                Color.background.ignoresSafeArea()
+                VStack(spacing: 0){
+                    
+                }
+                
+            }
         }
-        .navigationBarHidden(true)
-        .allowSwipeBack(allow: false)
     }
 }
 

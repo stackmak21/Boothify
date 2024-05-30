@@ -9,4 +9,5 @@ import Foundation
 
 class BaseViewModel: ObservableObject {
     let navigator: Navigator = NavigationViewModel.shared.navigator
+    let userDefaultSettings : UserDefaultSettings = UserDefaultSettings.shared
 }

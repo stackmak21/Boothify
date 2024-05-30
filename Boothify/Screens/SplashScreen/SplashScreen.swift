@@ -22,16 +22,22 @@ struct SplashScreenContent: View {
     
     var body: some View {
         ZStack{
-            Color.black.ignoresSafeArea()
+            (vm.animateToLightScreen ? Color.black : Color.white).ignoresSafeArea()
             VStack{
                 Image(uiImage: Asset.boothifyLogo.image)
                     .resizable()
+                    .renderingMode(.template)
+                    .foregroundColor(vm.animateToLightScreen ? Color.white : Color.black)
                     .frame(width: 250, height: 150)
+                LoadingDoubleHelix()
+                    .animation(nil, value: vm.animateToLightScreen)
             }
         }
+        .animation(.default, value: vm.animateToLightScreen)
         .onAppear{
-            DispatchQueue.main.asyncAfter(deadline: .now() + 2){
-                vm.navigator.navigate(.home)
+            Task{
+                await vm.toggleAnimation()
+                await vm.navigateToHome()
             }
         }
     }

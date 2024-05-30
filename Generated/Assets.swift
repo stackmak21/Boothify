@@ -25,8 +25,17 @@ internal typealias AssetImageTypeAlias = ImageAsset.Image
 // swiftlint:disable identifier_name line_length nesting type_body_length type_name
 internal enum Asset {
   internal static let accentColor = ColorAsset(name: "AccentColor")
+  internal enum Theme {
+    internal enum Pallete {
+      internal static let activeGreen = ColorAsset(name: "ActiveGreen")
+      internal static let backgroundColor = ColorAsset(name: "BackgroundColor")
+      internal static let backgroundLight = ColorAsset(name: "BackgroundLight")
+      internal static let backgroundNight = ColorAsset(name: "BackgroundNight")
+      internal static let letterGray = ColorAsset(name: "LetterGray")
+      internal static let letterGreen = ColorAsset(name: "LetterGreen")
+    }
+  }
   internal static let boothifyLogo = ImageAsset(name: "boothify logo")
-  internal static let events = ImageAsset(name: "events")
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
 
