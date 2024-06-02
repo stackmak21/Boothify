@@ -13,8 +13,10 @@ struct NavigationDirection {
 
 
 enum NavigationCommand{
-    case splash
     case home
+    case myEvents
+    case newEvents
+    case splash
     case goBack
     case goToRoot
 }

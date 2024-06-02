@@ -35,6 +35,7 @@ struct OnBoardingContent: View {
                     )
                     .autocorrectionDisabled()
                     .autocapitalization(.none)
+                    
                     Spacer()
                     ActionButton {
                         vm.onNextClicked()
@@ -45,8 +46,11 @@ struct OnBoardingContent: View {
                     .padding(.bottom)
 
                 }
+                .hideKeyboardWhenTappedAround()
                 .padding(.horizontal)
+                
             }
+            
         }
     }
 }

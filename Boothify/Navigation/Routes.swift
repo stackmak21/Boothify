@@ -8,12 +8,16 @@
 import Foundation
 
 
-//var exploreRoutes: [NavigationRoute] {
-//    return [
-//        SubCategoriesRoute(),
-//        JobConfigurationRoute(),
-//        SelectProfessionalRoute()
-//    ]
-//}
+var myEventsRoutes: [NavigationRoute] {
+    return [
+//        MyEventsRoute()
+    ]
+}
+
+var newEventsRoutes: [NavigationRoute] {
+    return [
+//        NewEventsRoute()
+    ]
+}
 
 

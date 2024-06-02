@@ -24,17 +24,6 @@ extension UINavigationController: UIGestureRecognizerDelegate {
     
 }
 
-
-struct DismissKeyboard: ViewModifier {
-    func body(content: Content) -> some View {
-        content
-            .background(Color.white.opacity(0.001))
-            .onTapGesture {
-                UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
-            }
-    }
-}
-
 struct SwipeBackModifier: ViewModifier {
     
     var isEnabled: Bool
@@ -52,9 +41,5 @@ extension View {
     
     func allowSwipeBack(allow isAllowed: Bool) -> some View {
         self.modifier(SwipeBackModifier(isEnabled: isAllowed))
-    }
-    
-    func hideKeyboardWhenTappedAround() -> some View{
-        self.modifier(DismissKeyboard())
     }
 }

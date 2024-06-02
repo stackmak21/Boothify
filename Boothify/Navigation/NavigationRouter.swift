@@ -14,7 +14,9 @@ struct NavigationRouter {
     static var routes: [NavigationRoute] {
         return [
             systemRoutes,
-            [HomeScreenRoute()]
+            [HomeRoute()],
+            myEventsRoutes,
+            newEventsRoutes
         ].flatMap{ $0 }
     }
     

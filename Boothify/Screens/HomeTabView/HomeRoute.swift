@@ -1,13 +1,13 @@
 //
-//  HomeScreenRoute.swift
-//  Boothify
+//  ExploreRoute.swift
+//  WrenchWizard
 //
-//  Created by Paris Makris on 22/5/24.
+//  Created by Paris Makris on 10/3/24.
 //
 
 import Foundation
 
-class HomeScreenRoute: NavigationRoute {
+class HomeRoute: NavigationRoute {
 
     func canRoute(navigationCommand: NavigationCommand) -> Bool {
         if case .home = navigationCommand{
