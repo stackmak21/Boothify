@@ -1,32 +1,23 @@
 //
-//  HomeScreen.swift
+//  NewEventsScreen.swift
 //  Boothify
 //
-//  Created by Paris Makris on 22/5/24.
+//  Created by Paris Makris on 2/6/24.
 //
 
 import SwiftUI
 
-struct MyEventsScreen: View {
-    @StateObject var onBoardingViewModel = OnBoardingScreenViewModel()
+struct NewEventsScreen: View {
+    @StateObject var vm = NewEventsViewModel()
     
     var body: some View {
-        Group{
-            if onBoardingViewModel.isUserOnBoarding{
-                OnBoardingContent(vm: onBoardingViewModel)
-            }
-            else{
-                HomeScreenContent()
-            }
-        }
-        .navigationBarHidden(true)
+        NewEventsContent(vm: vm)
     }
 }
 
-
-struct HomeScreenContent: View {
+struct NewEventsContent: View {
     
-    @StateObject var vm = MyEventsScreenViewModel()
+    @ObservedObject var vm: NewEventsViewModel
     
     var body: some View {
         GeometryReader{ container in
@@ -36,7 +27,7 @@ struct HomeScreenContent: View {
 
                     ScrollView(.vertical) {
                         ForEach(1..<10) { i in
-                            MyEventsItem()
+                            NewEventsItem()
                                 .padding(.top)
                                 .padding(.horizontal)
                                 .padding(.bottom, 6)
@@ -48,7 +39,6 @@ struct HomeScreenContent: View {
     }
 }
 
-
 #Preview {
-    MyEventsScreen()
+    NewEventsScreen()
 }

@@ -61,7 +61,7 @@
 		F9CE16682C08A23A00FB137E /* UserDefaultSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE16672C08A23A00FB137E /* UserDefaultSettings.swift */; };
 		F9CE166B2C08A83700FB137E /* OnBoardingScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE166A2C08A83700FB137E /* OnBoardingScreenViewModel.swift */; };
 		F9CE166D2C08AE0400FB137E /* PlaceholderModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE166C2C08AE0400FB137E /* PlaceholderModifier.swift */; };
-		F9CE166F2C08B37000FB137E /* ListingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE166E2C08B37000FB137E /* ListingItem.swift */; };
+		F9CE166F2C08B37000FB137E /* MyEventsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE166E2C08B37000FB137E /* MyEventsItem.swift */; };
 		F9CE16712C08BDDF00FB137E /* TrailingLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE16702C08BDDF00FB137E /* TrailingLabelStyle.swift */; };
 		F9CE16732C08C24A00FB137E /* Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE16722C08C24A00FB137E /* Shadow.swift */; };
 		F9CE16752C08F19B00FB137E /* DismissKeyboardModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE16742C08F19B00FB137E /* DismissKeyboardModifier.swift */; };
@@ -71,6 +71,13 @@
 		F9CE16832C0C57E900FB137E /* NewEventsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE16822C0C57E900FB137E /* NewEventsViewModel.swift */; };
 		F9CE16852C0C57FF00FB137E /* NewEventsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE16842C0C57FF00FB137E /* NewEventsScreen.swift */; };
 		F9CE16872C0C58DE00FB137E /* NewEventsRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE16862C0C58DE00FB137E /* NewEventsRoute.swift */; };
+		F9CE16892C0C5E2E00FB137E /* NewEventsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE16882C0C5E2E00FB137E /* NewEventsItem.swift */; };
+		F9CE168B2C0C6D4200FB137E /* EventDetailsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE168A2C0C6D4200FB137E /* EventDetailsScreen.swift */; };
+		F9CE168E2C0C6FDE00FB137E /* MapObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE168D2C0C6FDE00FB137E /* MapObject.swift */; };
+		F9CE16902C0C757900FB137E /* BoothifyMapMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE168F2C0C757900FB137E /* BoothifyMapMarker.swift */; };
+		F9CE16932C0C880700FB137E /* EventDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE16922C0C880700FB137E /* EventDetailsViewModel.swift */; };
+		F9CE16952C0C882300FB137E /* EventDetailsRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE16942C0C882300FB137E /* EventDetailsRoute.swift */; };
+		F9CE16972C0D0BAE00FB137E /* ToolbarItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE16962C0D0BAE00FB137E /* ToolbarItems.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -133,7 +140,7 @@
 		F9CE16672C08A23A00FB137E /* UserDefaultSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultSettings.swift; sourceTree = "<group>"; };
 		F9CE166A2C08A83700FB137E /* OnBoardingScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingScreenViewModel.swift; sourceTree = "<group>"; };
 		F9CE166C2C08AE0400FB137E /* PlaceholderModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderModifier.swift; sourceTree = "<group>"; };
-		F9CE166E2C08B37000FB137E /* ListingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingItem.swift; sourceTree = "<group>"; };
+		F9CE166E2C08B37000FB137E /* MyEventsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyEventsItem.swift; sourceTree = "<group>"; };
 		F9CE16702C08BDDF00FB137E /* TrailingLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingLabelStyle.swift; sourceTree = "<group>"; };
 		F9CE16722C08C24A00FB137E /* Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shadow.swift; sourceTree = "<group>"; };
 		F9CE16742C08F19B00FB137E /* DismissKeyboardModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissKeyboardModifier.swift; sourceTree = "<group>"; };
@@ -143,6 +150,13 @@
 		F9CE16822C0C57E900FB137E /* NewEventsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEventsViewModel.swift; sourceTree = "<group>"; };
 		F9CE16842C0C57FF00FB137E /* NewEventsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEventsScreen.swift; sourceTree = "<group>"; };
 		F9CE16862C0C58DE00FB137E /* NewEventsRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEventsRoute.swift; sourceTree = "<group>"; };
+		F9CE16882C0C5E2E00FB137E /* NewEventsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEventsItem.swift; sourceTree = "<group>"; };
+		F9CE168A2C0C6D4200FB137E /* EventDetailsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsScreen.swift; sourceTree = "<group>"; };
+		F9CE168D2C0C6FDE00FB137E /* MapObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapObject.swift; sourceTree = "<group>"; };
+		F9CE168F2C0C757900FB137E /* BoothifyMapMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoothifyMapMarker.swift; sourceTree = "<group>"; };
+		F9CE16922C0C880700FB137E /* EventDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsViewModel.swift; sourceTree = "<group>"; };
+		F9CE16942C0C882300FB137E /* EventDetailsRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsRoute.swift; sourceTree = "<group>"; };
+		F9CE16962C0D0BAE00FB137E /* ToolbarItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarItems.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +208,7 @@
 				F9CE160E2BFE651C00FB137E /* Fonts */,
 				F9CE163A2BFE66F400FB137E /* Extensions */,
 				F9CE16382BFE66C900FB137E /* Screens */,
+				F9CE16812C0C57CF00FB137E /* NewEventsScreen */,
 				F9CE16392BFE66D700FB137E /* ViewModels */,
 				F9CE160D2BFD46E100FB137E /* Info.plist */,
 				F9CE15DD2BFD2F3100FB137E /* BoothifyApp.swift */,
@@ -222,6 +237,7 @@
 				F9CE15F62BFD32C100FB137E /* Navigator.swift */,
 				F9CE15F02BFD32C100FB137E /* Routes.swift */,
 				F9CE15F12BFD32C100FB137E /* SystemRoutes.swift */,
+				F9CE16962C0D0BAE00FB137E /* ToolbarItems.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -263,10 +279,10 @@
 		F9CE16382BFE66C900FB137E /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				F9CE16912C0C87E900FB137E /* EventDetailsScreen */,
 				F9CE16482BFE720E00FB137E /* SplashScreen */,
 				F9CE16692C08A7C700FB137E /* OnBoardingScreen */,
 				F9CE167A2C0C4B3500FB137E /* HomeTabView */,
-				F9CE16812C0C57CF00FB137E /* NewEventsScreen */,
 				F9CE16792C0C4AD200FB137E /* MyEventsScreen */,
 			);
 			path = Screens;
@@ -315,11 +331,13 @@
 		F9CE16522BFFE18D00FB137E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F9CE168C2C0C6FBC00FB137E /* MapKit */,
 				F9CE16622C07A09D00FB137E /* TextField */,
 				F9CE16612C07A01800FB137E /* ActionButton */,
 				F9CE16532BFFE1A400FB137E /* DoubleHelixLoadingIndicator.swift */,
 				F9CE16552C06577D00FB137E /* SectionDashedBox.swift */,
-				F9CE166E2C08B37000FB137E /* ListingItem.swift */,
+				F9CE166E2C08B37000FB137E /* MyEventsItem.swift */,
+				F9CE16882C0C5E2E00FB137E /* NewEventsItem.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -356,8 +374,8 @@
 		F9CE16792C0C4AD200FB137E /* MyEventsScreen */ = {
 			isa = PBXGroup;
 			children = (
-				F9CE164C2BFE72F600FB137E /* MyEventsScreenViewModel.swift */,
 				F9CE164E2BFE730D00FB137E /* MyEventsScreen.swift */,
+				F9CE164C2BFE72F600FB137E /* MyEventsScreenViewModel.swift */,
 				F9CE16502BFE736700FB137E /* MyEventsRoute.swift */,
 			);
 			path = MyEventsScreen;
@@ -366,9 +384,9 @@
 		F9CE167A2C0C4B3500FB137E /* HomeTabView */ = {
 			isa = PBXGroup;
 			children = (
-				F9CE167B2C0C4B3500FB137E /* HomeRoute.swift */,
-				F9CE167C2C0C4B3500FB137E /* HomeViewModel.swift */,
 				F9CE167D2C0C4B3500FB137E /* HomeScreen.swift */,
+				F9CE167C2C0C4B3500FB137E /* HomeViewModel.swift */,
+				F9CE167B2C0C4B3500FB137E /* HomeRoute.swift */,
 			);
 			path = HomeTabView;
 			sourceTree = "<group>";
@@ -376,11 +394,30 @@
 		F9CE16812C0C57CF00FB137E /* NewEventsScreen */ = {
 			isa = PBXGroup;
 			children = (
-				F9CE16822C0C57E900FB137E /* NewEventsViewModel.swift */,
 				F9CE16842C0C57FF00FB137E /* NewEventsScreen.swift */,
+				F9CE16822C0C57E900FB137E /* NewEventsViewModel.swift */,
 				F9CE16862C0C58DE00FB137E /* NewEventsRoute.swift */,
 			);
 			path = NewEventsScreen;
+			sourceTree = "<group>";
+		};
+		F9CE168C2C0C6FBC00FB137E /* MapKit */ = {
+			isa = PBXGroup;
+			children = (
+				F9CE168D2C0C6FDE00FB137E /* MapObject.swift */,
+				F9CE168F2C0C757900FB137E /* BoothifyMapMarker.swift */,
+			);
+			path = MapKit;
+			sourceTree = "<group>";
+		};
+		F9CE16912C0C87E900FB137E /* EventDetailsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				F9CE168A2C0C6D4200FB137E /* EventDetailsScreen.swift */,
+				F9CE16922C0C880700FB137E /* EventDetailsViewModel.swift */,
+				F9CE16942C0C882300FB137E /* EventDetailsRoute.swift */,
+			);
+			path = EventDetailsScreen;
 			sourceTree = "<group>";
 		};
 		FCAF18B3200D99CB189C36F3 /* Frameworks */ = {
@@ -550,22 +587,28 @@
 				F9CE16472BFE70EE00FB137E /* FocusNative.swift in Sources */,
 				F9CE16802C0C4B3500FB137E /* HomeScreen.swift in Sources */,
 				F9CE15FD2BFD32C100FB137E /* NavigationViewModel.swift in Sources */,
+				F9CE16972C0D0BAE00FB137E /* ToolbarItems.swift in Sources */,
 				F9CE16662C07A14500FB137E /* LabeledTextField.swift in Sources */,
 				F9CE16582C07912400FB137E /* ActionButtonStyle.swift in Sources */,
 				F9CE16512BFE736700FB137E /* MyEventsRoute.swift in Sources */,
 				F9CE16452BFE70D200FB137E /* FontExtensions.swift in Sources */,
 				F9CE16602C07965300FB137E /* OnBoardingContent.swift in Sources */,
+				F9CE16892C0C5E2E00FB137E /* NewEventsItem.swift in Sources */,
 				F9CE164F2BFE730D00FB137E /* MyEventsScreen.swift in Sources */,
-				F9CE166F2C08B37000FB137E /* ListingItem.swift in Sources */,
+				F9CE166F2C08B37000FB137E /* MyEventsItem.swift in Sources */,
 				F9CE167E2C0C4B3500FB137E /* HomeRoute.swift in Sources */,
 				F9CE16712C08BDDF00FB137E /* TrailingLabelStyle.swift in Sources */,
+				F9CE168B2C0C6D4200FB137E /* EventDetailsScreen.swift in Sources */,
+				F9CE16952C0C882300FB137E /* EventDetailsRoute.swift in Sources */,
 				F9CE16412BFE709900FB137E /* Typography.swift in Sources */,
 				F9CE165A2C07916700FB137E /* ButtonStyleAttributes.swift in Sources */,
 				F9CE16352BFE654F00FB137E /* Strings.swift in Sources */,
 				F9CE16642C07A0D300FB137E /* TextFieldStyle.swift in Sources */,
+				F9CE16932C0C880700FB137E /* EventDetailsViewModel.swift in Sources */,
 				F9CE166B2C08A83700FB137E /* OnBoardingScreenViewModel.swift in Sources */,
 				F9CE16832C0C57E900FB137E /* NewEventsViewModel.swift in Sources */,
 				F9CE16372BFE654F00FB137E /* Fonts.swift in Sources */,
+				F9CE16902C0C757900FB137E /* BoothifyMapMarker.swift in Sources */,
 				F9CE163C2BFE673900FB137E /* BaseViewModel.swift in Sources */,
 				F9CE16362BFE654F00FB137E /* Assets.swift in Sources */,
 				F9CE16732C08C24A00FB137E /* Shadow.swift in Sources */,
@@ -589,6 +632,7 @@
 				F9CE15FB2BFD32C100FB137E /* NavigationDirection.swift in Sources */,
 				F9CE165E2C0791E000FB137E /* ActivityIndicator.swift in Sources */,
 				F9CE15FA2BFD32C100FB137E /* NavigationRouteProtocol.swift in Sources */,
+				F9CE168E2C0C6FDE00FB137E /* MapObject.swift in Sources */,
 				F9CE165C2C07919700FB137E /* ActionButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -12,6 +12,7 @@ import FlowStacks
 typealias NavigationStack = Routes<Screen>
 
 enum Screen: Equatable {
+    case eventDetails
     case home
     case splash
 }
@@ -36,6 +37,8 @@ struct HostView: View {
                 HomeScreen()
             case .splash:
                 SplashScreen()
+            case .eventDetails:
+                EventDetailsScreen()
             }
         
         }

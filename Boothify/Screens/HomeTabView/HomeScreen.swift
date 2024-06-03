@@ -20,10 +20,7 @@ struct HomeScreen: View {
                     case .myEvents:
                         MyEventsScreen()
                     case .newEvents:
-                        ZStack{
-                            Color.white.ignoresSafeArea()
-                            Text("Hello")
-                        }
+                        NewEventsScreen()
                     }
                 }
                 .allowSwipeBack(allow: false)
@@ -125,9 +122,9 @@ private struct TabItem: View {
     
     private var color: Color {
         if isSelected {
-            return Color.activeGreen
+            return Color.letterGreen
         } else {
-            return Color.activeGreen.opacity(0.6)
+            return Color.letterGreen.opacity(0.5)
         }
     }
 }

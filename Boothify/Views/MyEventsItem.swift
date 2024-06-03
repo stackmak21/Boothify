@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct ListingItem: View {
+struct MyEventsItem: View {
     var title: String
     let eventType: String
     let location: String
@@ -79,7 +79,7 @@ struct ListingItem: View {
         .padding(.horizontal, 14)
         .padding(.vertical, 10)
         .frame(maxWidth: .infinity)
-        .frame(height: 140)
+        .frame(height: 150)
         .background(Color.backgroundNight).clipShape(RoundedRectangle(cornerRadius: 12))
         .overlay{
             RoundedRectangle(cornerRadius: 12).stroke(Color.letterGray.opacity(0.6), lineWidth: 1)
@@ -92,10 +92,10 @@ struct ListingItem: View {
         Color.background.ignoresSafeArea()
         VStack{
             Group{
-                ListingItem()
-                ListingItem(title: "Medicare - Mairi Kanellopoulou")
-                ListingItem()
-                ListingItem()
+                MyEventsItem()
+                MyEventsItem(title: "Medicare - Mairi Kanellopoulou")
+                MyEventsItem()
+                MyEventsItem()
             }
             .padding()
         }
