@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "06513D74-5A81-4689-81D4-D472196C924F"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1C2C3A24-DFF0-47FF-B3AA-0120DBAC36C3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Boothify/Screens/MyEventsScreen/MyEventsScreenViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "fetchEvents()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1C2C3A24-DFF0-47FF-B3AA-0120DBAC36C3 - ea21c73755b3bc3d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async -&gt; () in Boothify.MyEventsScreenViewModel.fetchEvents() -&gt; ()"
+                  moduleName = "Boothify"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paresmakres/Documents/GitHub/Boothify/Boothify/Screens/MyEventsScreen/MyEventsScreenViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "136">
+               </Location>
+               <Location
+                  uuid = "1C2C3A24-DFF0-47FF-B3AA-0120DBAC36C3 - 1d7177f8355d609a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for closure #1 @Sendable () async -&gt; () in Boothify.MyEventsScreenViewModel.fetchEvents() -&gt; ()"
+                  moduleName = "Boothify"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paresmakres/Documents/GitHub/Boothify/Boothify/Screens/MyEventsScreen/MyEventsScreenViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "1C2C3A24-DFF0-47FF-B3AA-0120DBAC36C3 - 9fb0aa717adf1848"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in Boothify.MyEventsScreenViewModel.fetchEvents() -&gt; ()"
+                  moduleName = "Boothify"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paresmakres/Documents/GitHub/Boothify/Boothify/Screens/MyEventsScreen/MyEventsScreenViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "36">
+               </Location>
+               <Location
+                  uuid = "1C2C3A24-DFF0-47FF-B3AA-0120DBAC36C3 - 9fb0aa717adf182f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in Boothify.MyEventsScreenViewModel.fetchEvents() -&gt; ()"
+                  moduleName = "Boothify"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paresmakres/Documents/GitHub/Boothify/Boothify/Screens/MyEventsScreen/MyEventsScreenViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "1C2C3A24-DFF0-47FF-B3AA-0120DBAC36C3 - ca083b1194acaa3f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for closure #1 @Sendable () async -&gt; () in Boothify.MyEventsScreenViewModel.fetchEvents() -&gt; ()"
+                  moduleName = "Boothify"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paresmakres/Documents/GitHub/Boothify/Boothify/Screens/MyEventsScreen/MyEventsScreenViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "68">
+               </Location>
+               <Location
+                  uuid = "1C2C3A24-DFF0-47FF-B3AA-0120DBAC36C3 - ca083b1194acaa58"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for closure #1 @Sendable () async -&gt; () in Boothify.MyEventsScreenViewModel.fetchEvents() -&gt; ()"
+                  moduleName = "Boothify"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paresmakres/Documents/GitHub/Boothify/Boothify/Screens/MyEventsScreen/MyEventsScreenViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "92">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9ACB31C4-158C-4102-B4AC-E5073FC6CC76"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Boothify/Neworking/NetworkingManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "downloadData(fromURL:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6F994106-9919-405C-9C1D-936A33D42F8C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Boothify/Neworking/NetworkingManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "downloadData(fromURL:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6F994106-9919-405C-9C1D-936A33D42F8C - 53347271c303e4d0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for Boothify.NetworkingManager.downloadData&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable, &#x3c4;_0_0: Swift.Encodable&gt;(fromURL: Swift.String) async -&gt; Swift.Optional&lt;&#x3c4;_0_0&gt;"
+                  moduleName = "Boothify"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paresmakres/Documents/GitHub/Boothify/Boothify/Neworking/NetworkingManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "280">
+               </Location>
+               <Location
+                  uuid = "6F994106-9919-405C-9C1D-936A33D42F8C - 3dbd4b9d02562013"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for Boothify.NetworkingManager.downloadData&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable, &#x3c4;_0_0: Swift.Encodable&gt;(fromURL: Swift.String) async -&gt; Swift.Optional&lt;&#x3c4;_0_0&gt;"
+                  moduleName = "Boothify"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paresmakres/Documents/GitHub/Boothify/Boothify/Neworking/NetworkingManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "6F994106-9919-405C-9C1D-936A33D42F8C - d451460bf18fd8d6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for Boothify.NetworkingManager.downloadData&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable, &#x3c4;_0_0: Swift.Encodable&gt;(fromURL: Swift.String) async -&gt; Swift.Optional&lt;&#x3c4;_0_0&gt;"
+                  moduleName = "Boothify"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paresmakres/Documents/GitHub/Boothify/Boothify/Neworking/NetworkingManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "140">
+               </Location>
+               <Location
+                  uuid = "6F994106-9919-405C-9C1D-936A33D42F8C - 98c3cdd0fed23729"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for Boothify.NetworkingManager.downloadData&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable, &#x3c4;_0_0: Swift.Encodable&gt;(fromURL: Swift.String) async -&gt; Swift.Optional&lt;&#x3c4;_0_0&gt;"
+                  moduleName = "Boothify"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paresmakres/Documents/GitHub/Boothify/Boothify/Neworking/NetworkingManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "96">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

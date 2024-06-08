@@ -10,31 +10,31 @@ import SwiftUI
 
 class OnBoardingScreenViewModel: BaseViewModel {
     
-    @Published var isUserOnBoarding: Bool = true
-    @Published var userName: String = ""
+    @Published var userId: String = ""
     @Published var isNextAllowed : Bool = false
+    @Published var isEditMode: Bool = false
     
-    override init(){
-        super.init()
-        
-        if let savedUserName = userDefaultSettings.getUser() {
-            self.userName = savedUserName
-            onBoardingCompleted()
+    
+    private func onBoardingCompleted(){
+        if isEditMode{
+            navigator.goBack()
+        }else{
+            navigator.navigate(.home)
         }
     }
     
-    private func onBoardingCompleted(){
-        isUserOnBoarding = false
-    }
-    
     func isTextFieldEmpty() {
-        isNextAllowed = !userName.isEmpty
+        isNextAllowed = !userId.isEmpty
     }
     
-    func onNextClicked() {
-        userDefaultSettings.saveUser(userName)
-        withAnimation {
-            onBoardingCompleted()
+    func onClick() {
+        userDefaultSettings.saveUser(userId)
+        onBoardingCompleted()
+    }
+    
+    func getUserID(){
+        if let currentUserID = userDefaultSettings.getUser(){
+            isEditMode = true
         }
     }
 }

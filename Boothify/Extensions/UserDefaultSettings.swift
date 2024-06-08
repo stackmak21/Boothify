@@ -14,14 +14,14 @@ class UserDefaultSettings: ObservableObject{
     
     private init(){}
     
-    let userNameKey = "userName"
+    let userIDKey = "userID"
 
     func saveUser(_ theme: String) {
-        UserDefaults.standard.set(theme, forKey: userNameKey)
+        UserDefaults.standard.set(theme, forKey: userIDKey)
     }
 
     func getUser() -> String?{
-        guard let preference = UserDefaults.standard.string(forKey: userNameKey) else { return nil }
+        guard let preference = UserDefaults.standard.string(forKey: userIDKey) else { return nil }
         return preference
     }
     

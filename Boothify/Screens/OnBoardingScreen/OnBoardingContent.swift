@@ -9,7 +9,7 @@ import SwiftUI
 
 struct OnBoardingContent: View {
     
-    @ObservedObject var vm: OnBoardingScreenViewModel
+    @StateObject var vm =  OnBoardingScreenViewModel()
     
     var body: some View {
         GeometryReader{ container in
@@ -17,19 +17,19 @@ struct OnBoardingContent: View {
                 Color.background.ignoresSafeArea()
                 VStack{
                     SectionDashedBox(
-                        title: "Your Name",
-                        description: "Provide your name to bring the right events for you",
+                        title: "Your ID",
+                        description: "Please insert your Boothify ID",
                         image: Asset.boothifyLogo.image
                     )
-                    .frame(height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
+                    .frame(height: 120)
                     .padding(.top, container.safeAreaInsets.top)
                     Spacer().frame(height: 16)
                     LabeledTextField(
-                        placeholder: "Provide your name",
+                        placeholder: "Insert your Boothify ID here...",
                         text: Binding(get: {
-                            vm.userName
+                            vm.userId
                         }, set: {
-                            vm.userName = $0
+                            vm.userId = $0
                             vm.isTextFieldEmpty()
                         })
                     )
@@ -37,16 +37,21 @@ struct OnBoardingContent: View {
                     .autocapitalization(.none)
                     
                     Spacer()
-                    ActionButton {
-                        vm.onNextClicked()
+                    ActionButton {    
+                        vm.onClick()
                     } content: {
-                        Text("Next")
+                        Text(vm.isEditMode ? "Save" : "Next")
                     }
                     .disabled(!vm.isNextAllowed)
                     .padding(.bottom)
 
                 }
+                .onAppear{
+                    vm.getUserID()
+                }
                 .hideKeyboardWhenTappedAround()
+                .navigationBarBackButtonHidden(true)
+                .navigationBarHidden(true)
                 .padding(.horizontal)
                 
             }

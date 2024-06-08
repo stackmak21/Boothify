@@ -10,6 +10,7 @@ import SwiftUI
 struct HomeScreen: View {
     
     @StateObject private var homeViewModel: HomeViewModel = HomeViewModel()
+    @StateObject var myEventsViewModel: MyEventsScreenViewModel = MyEventsScreenViewModel()
     
     var body: some View {
             VStack(spacing: 0) {
@@ -18,7 +19,7 @@ struct HomeScreen: View {
                 ZStack {
                     switch homeViewModel.activeTab {
                     case .myEvents:
-                        MyEventsScreen()
+                        MyEventsScreen(vm: myEventsViewModel)
                     case .newEvents:
                         NewEventsScreen()
                     }
@@ -45,7 +46,7 @@ struct HomeScreen: View {
             Spacer()
             Button(
                 action: {
-                    
+                    homeViewModel.navigator.navigate(.settings)
                 },
                 label: {
                     Image(systemName: "gear")
@@ -54,6 +55,7 @@ struct HomeScreen: View {
                         .frame(width: 30, height: 30)
                         .foregroundColor(Color.activeGreen)
                 })
+            .buttonStyle(PlainButtonStyle())
         }
         .padding(.horizontal)
         .background(Color.backgroundNight.ignoresSafeArea().shadow(length: .long))

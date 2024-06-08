@@ -13,7 +13,7 @@ struct ActivityIndicator: View {
     @Binding var progress: CGFloat
     
     init(
-        color: Color = Color.primary,
+        color: Color = Color.white,
         progress: Binding<CGFloat> = .constant(.infinity)
     ) {
         self.color = color
@@ -24,6 +24,7 @@ struct ActivityIndicator: View {
         if progress >= 1.0 {
             ProgressView()
                 .progressViewStyle(CircularProgressViewStyle(tint: color))
+                .scaleEffect(1.4)
         } else {
             Circle()
                 .trim(from: 0.0, to: min(progress, 1.0))
@@ -38,4 +39,5 @@ struct ActivityIndicator: View {
 
 #Preview {
     ActivityIndicator()
+        .background(Color.black.ignoresSafeArea())
 }

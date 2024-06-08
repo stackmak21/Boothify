@@ -8,47 +8,68 @@
 import SwiftUI
 
 struct MyEventsScreen: View {
-    @StateObject var onBoardingViewModel = OnBoardingScreenViewModel()
+    
+    @ObservedObject var vm: MyEventsScreenViewModel
     
     var body: some View {
         Group{
-            if onBoardingViewModel.isUserOnBoarding{
-                OnBoardingContent(vm: onBoardingViewModel)
-            }
-            else{
-                HomeScreenContent()
-            }
+            MyEventsContent(vm: vm)
         }
-        .navigationBarHidden(true)
     }
+    
 }
 
 
-struct HomeScreenContent: View {
+struct MyEventsContent: View {
     
-    @StateObject var vm = MyEventsScreenViewModel()
+    @ObservedObject var vm: MyEventsScreenViewModel
+    @Environment(\.scenePhase) var scenePhase
+
     
     var body: some View {
         GeometryReader{ container in
             ZStack{
                 Color.background.ignoresSafeArea()
                 VStack(spacing: 0){
-
-                    ScrollView(.vertical) {
-                        ForEach(1..<10) { i in
-                            MyEventsItem()
-                                .padding(.top)
-                                .padding(.horizontal)
-                                .padding(.bottom, 6)
+                    if vm.isLoading{
+                        ActivityIndicator()
+                    }else{
+                        
+                        ScrollView(.vertical) {
+                            LazyVStack{
+                                ForEach(vm.events, id: \.self) { event in
+                                    Button(
+                                        action: {vm.navigator.navigate(.eventDetails(event))},
+                                        label: {
+                                        MyEventsItem(event: event)
+                                                .frame(height: 150)
+                                    })
+                                    .buttonStyle(PlainButtonStyle())
+                                    .padding(.top)
+                                    .padding(.horizontal)
+                                    .padding(.bottom, 6)
+                                }
+                            }
                         }
                     }
                 }
             }
+            .onAppear{
+                if vm.events.isEmpty{
+                    vm.fetchEvents()
+                }
+            }
+            .onChange(of: scenePhase) { newPhase in
+                if newPhase == .active{
+                    vm.fetchEvents()
+                }
+            }
+            .navigationBarHidden(true)
         }
     }
 }
 
 
 #Preview {
-    MyEventsScreen()
+    MyEventsScreen(vm: MyEventsScreenViewModel())
 }

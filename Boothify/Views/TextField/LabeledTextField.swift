@@ -201,7 +201,9 @@ struct LabeledTextField<TrailingContent, LeadingContent>: View where  TrailingCo
                 }
             )
             .placeholder(when: text.isEmpty) {
-                Text(placeholder).foregroundColor(Color.letterGray.opacity(0.6))
+                Text(placeholder)
+                    .font(style.typography.content)
+                    .foregroundColor(Color.letterGray.opacity(0.6))
             }
             .disableFeaturesForPassword(password)
         }

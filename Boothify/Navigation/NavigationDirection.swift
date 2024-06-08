@@ -14,7 +14,9 @@ struct NavigationDirection {
 
 enum NavigationCommand{
     case home
-    case eventDetails
+    case eventDetails(_ event: BoothifyEvent)
+    case settings
+    case onBoarding
     case myEvents
     case newEvents
     case splash

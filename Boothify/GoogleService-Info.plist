@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyB1h_gQTKSIX7ciqI3-z584qyX0cPF1M2U</string>
+	<key>GCM_SENDER_ID</key>
+	<string>337602635586</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>gr.stackmak.Boothify</string>
+	<key>PROJECT_ID</key>
+	<string>boothify-2a6ce</string>
+	<key>STORAGE_BUCKET</key>
+	<string>boothify-2a6ce.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:337602635586:ios:e50c55b6743be484b74adb</string>
+</dict>
+</plist>

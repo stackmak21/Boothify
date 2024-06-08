@@ -32,7 +32,7 @@ struct SectionDashedBox: View {
                     .foregroundColor(.letterGreen)
                 Spacer().frame(height: 16)
                 Text(description)
-                    .font(Typography.medium(size: 14))
+                    .font(Typography.medium(size: 16))
                     .foregroundColor(.letterGray)
                     .multilineTextAlignment(.center)
             }
@@ -41,7 +41,7 @@ struct SectionDashedBox: View {
         .dashedRectangleWrapper()
         .overlay(alignment: .top){
             CircleIcon
-                .offset(y:-30)
+                .offset(y:-40)
         }
     }
     
@@ -49,7 +49,7 @@ struct SectionDashedBox: View {
         Image(uiImage: image)
             .resizable()
             .renderingMode(.template)
-            .frame(width: 40, height: 40)
+            .frame(width: 50, height: 50)
             .padding(10)
             .foregroundStyle(.letterGreen)
             .background(Color.background)
@@ -72,14 +72,20 @@ struct SectionDashedBox: View {
 
 struct DashedStrokeStyle: ViewModifier {
     
-    let dash: [CGFloat] = [2]
+    let dash: CGFloat
+    
+    init(
+        dash: CGFloat = 3
+    ){
+        self.dash = dash
+    }
     
     func body(content: Content) -> some View {
         content
             .frame(maxWidth: .infinity, maxHeight: 150)
             .overlay{
                 RoundedRectangle(cornerRadius: 8)
-                    .stroke(Color.activeGreen, style: StrokeStyle(lineWidth: 1, dash: dash))
+                    .stroke(Color.activeGreen, style: StrokeStyle(lineWidth: 1, dash: [dash]))
             }
     }
     

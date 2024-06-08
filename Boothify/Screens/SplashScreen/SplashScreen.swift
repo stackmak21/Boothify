@@ -29,8 +29,6 @@ struct SplashScreenContent: View {
                     .renderingMode(.template)
                     .foregroundColor(vm.animateToLightScreen ? Color.white : Color.black)
                     .frame(width: 250, height: 150)
-                LoadingDoubleHelix()
-                    .animation(nil, value: vm.animateToLightScreen)
             }
         }
         .animation(.default, value: vm.animateToLightScreen)

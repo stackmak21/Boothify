@@ -20,30 +20,14 @@ internal typealias GeneratedFont = FontConvertible.Font
 
 // swiftlint:disable identifier_name line_length type_body_length
 internal enum FontFamily {
-  internal enum Faktum {
-    internal static let bold = FontConvertible(name: "Faktum-Bold", family: "Faktum", path: "faktum_bold.ttf")
-    internal static let boldItalic = FontConvertible(name: "Faktum-BoldItalic", family: "Faktum", path: "faktum_bold_italic.ttf")
-    internal static let extraBold = FontConvertible(name: "Faktum-ExtraBold", family: "Faktum", path: "faktum_extra_bold.ttf")
-    internal static let extraBoldItalic = FontConvertible(name: "Faktum-ExtraBoldItalic", family: "Faktum", path: "faktum_extra_bold_italic.ttf")
-    internal static let extraLight = FontConvertible(name: "Faktum-ExtraLight", family: "Faktum", path: "faktum_extra_light.ttf")
-    internal static let extraLightItalic = FontConvertible(name: "Faktum-ExtraLightItalic", family: "Faktum", path: "faktum_extra_light_italic.ttf")
-    internal static let light = FontConvertible(name: "Faktum-Light", family: "Faktum", path: "faktum_light.ttf")
-    internal static let lightItalic = FontConvertible(name: "Faktum-LightItalic", family: "Faktum", path: "faktum_light_italic.ttf")
-    internal static let medium = FontConvertible(name: "Faktum-Medium", family: "Faktum", path: "faktum_medium.ttf")
-    internal static let mediumItalic = FontConvertible(name: "Faktum-MediumItalic", family: "Faktum", path: "faktum_medium_italic.ttf")
-    internal static let regular = FontConvertible(name: "Faktum-Regular", family: "Faktum", path: "faktum_regular.ttf")
-    internal static let regularItalic = FontConvertible(name: "Faktum-RegularItalic", family: "Faktum", path: "faktum_regular_italic.ttf")
-    internal static let semiBold = FontConvertible(name: "Faktum-SemiBold", family: "Faktum", path: "faktum_semi_bold.ttf")
-    internal static let semiBoldItalic = FontConvertible(name: "Faktum-SemiBoldItalic", family: "Faktum", path: "faktum_semi_bold_italic.ttf")
-    internal static let thin = FontConvertible(name: "Faktum-Thin", family: "Faktum", path: "faktum_thin.ttf")
-    internal static let thinItalic = FontConvertible(name: "Faktum-ThinItalic", family: "Faktum", path: "faktum_thin_italic.ttf")
-    internal static let all: [FontConvertible] = [bold, boldItalic, extraBold, extraBoldItalic, extraLight, extraLightItalic, light, lightItalic, medium, mediumItalic, regular, regularItalic, semiBold, semiBoldItalic, thin, thinItalic]
+  internal enum Ubuntu {
+    internal static let bold = FontConvertible(name: "Ubuntu-Bold", family: "Ubuntu", path: "Ubuntu-Bold.ttf")
+    internal static let light = FontConvertible(name: "Ubuntu-Light", family: "Ubuntu", path: "Ubuntu-Light.ttf")
+    internal static let medium = FontConvertible(name: "Ubuntu-Medium", family: "Ubuntu", path: "Ubuntu-Medium.ttf")
+    internal static let regular = FontConvertible(name: "Ubuntu-Regular", family: "Ubuntu", path: "Ubuntu-Regular.ttf")
+    internal static let all: [FontConvertible] = [bold, light, medium, regular]
   }
-  internal enum Btv {
-    internal static let regular = FontConvertible(name: "btv", family: "btv", path: "btv.ttf")
-    internal static let all: [FontConvertible] = [regular]
-  }
-  internal static let allCustomFonts: [FontConvertible] = [Faktum.all, Btv.all].flatMap { $0 }
+  internal static let allCustomFonts: [FontConvertible] = [Ubuntu.all].flatMap { $0 }
   internal static func registerAllCustomFonts() {
     allCustomFonts.forEach { $0.register() }
   }

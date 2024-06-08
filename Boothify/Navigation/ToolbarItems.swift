@@ -36,8 +36,8 @@ struct ToolbarTitle: ToolbarContent {
     var body: some ToolbarContent {
         ToolbarItemGroup(placement: .principal) {
             Text(title)
-                .foregroundColor(Color.navigationBarForeground)
-                .font(Typography.semiBold(size: 18))
+                .foregroundColor(Color.white)
+                .font(Typography.bold(size: 18))
                 .frame(maxWidth: expand ? .infinity : nil, maxHeight: .infinity)
                 .padding(.vertical, 8)
                 .multilineTextAlignment(.center)
@@ -54,7 +54,7 @@ struct ToolbarImage: View {
     var size: CGFloat
     var color: Color
     
-    init(systemName: String, size: CGFloat = 22, color: Color = Color.navigationBarForeground) {
+    init(systemName: String, size: CGFloat = 22, color: Color = Color.white) {
         self.systemName = systemName
         self.size = size
         self.color = color

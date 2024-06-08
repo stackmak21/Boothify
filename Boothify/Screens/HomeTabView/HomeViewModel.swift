@@ -8,7 +8,7 @@
 import Foundation
 
 
-class HomeViewModel: ObservableObject {
+class HomeViewModel: BaseViewModel {
     @Published var activeTab: ActiveTab = .myEvents
     
 }

@@ -8,5 +8,8 @@ target 'Boothify' do
   # Pods for Boothify
 	pod 'SwiftGen', '~> 6.0'
 	pod 'FlowStacks', :git => 'https://github.com/johnpatrickmorgan/FlowStacks.git'
+  pod 'FirebaseAnalytics'
+  pod 'Firebase/Core'
+  pod 'Firebase/Crashlytics'
 
 end

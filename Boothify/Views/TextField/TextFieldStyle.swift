@@ -135,7 +135,7 @@ let outlinedTextFieldColors = TextFieldColorSet(
 
 let outlinedTextFieldTypohraphy = TextFieldTyporaphySet(
     content: Typography.medium(size: 16),
-    label: Typography.semiBold(size: 16),
+    label: Typography.bold(size: 16),
     hint: Typography.medium(size: 12),
     helper: Typography.medium(size: 14)
 )

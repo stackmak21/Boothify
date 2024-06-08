@@ -13,12 +13,20 @@ class SplashScreenViewModel: BaseViewModel{
     @Published var animateToLightScreen: Bool = false
     
     func toggleAnimation() async {
-        try? await Task.sleep(nanoseconds: 2_000_000_000)
+        try? await Task.sleep(nanoseconds: 1_000_000_000)
         animateToLightScreen.toggle()
     }
     
     func navigateToHome() async {
-        try? await Task.sleep(nanoseconds: 2_000_000_000)
-        navigator.navigate(.home)
+        try? await Task.sleep(nanoseconds: 3_000_000_000)
+        navigateToHomeOrOnBoarding()
+    }
+    
+    private func navigateToHomeOrOnBoarding(){
+        if let savedUserID = userDefaultSettings.getUser() {
+            navigator.navigate(.home)
+        }else{
+            navigator.navigate(.onBoarding)
+        }
     }
 }

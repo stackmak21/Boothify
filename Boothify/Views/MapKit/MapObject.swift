@@ -33,11 +33,18 @@ struct MapObject: View {
                 
             }
         }
+        .onTapGesture {
+            openMap(address: eventAddress)
+        }
 //        .clipShape(RoundedRectangle(cornerRadius: 16))
         .shadow(length: .short)
         .onAppear {
             setRegion(for: eventAddress)
         }
+    }
+    
+    private func openMap(address: String){
+        UIApplication.shared.openURL(NSURL(string: "http://maps.apple.com?address=\(address)")! as URL)
     }
     
     func setRegion(for address: String) {
